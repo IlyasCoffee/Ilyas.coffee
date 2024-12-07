@@ -1,0 +1,9 @@
+import Link from "next/link";
+
+export default function Home() {
+  return (
+    <main className="h-screen w-screen center">
+      <h1 className="animate-pulse">Under Development</h1>
+    </main>
+  );
+}
