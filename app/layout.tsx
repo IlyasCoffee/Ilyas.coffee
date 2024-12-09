@@ -1,3 +1,5 @@
+import Nav from "@/components/nav";
+import Footer from "@/components/footer";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
@@ -17,7 +19,11 @@ export default function RootLayout({children,}: Readonly<{children: React.ReactN
   return (
     <html lang="en">
       <body>
-        {children}
+        <Nav/>
+        <main className="center h-screen w-full">
+          {children}
+        </main>
+        <Footer/>
       </body>
     </html>
   );
